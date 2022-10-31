@@ -109,12 +109,12 @@ const rules = {
 	strike: Object.assign({ }, markdown.defaultRules.del, {
 		match: markdown.inlineRegex(/^~~([\s\S]+?)~~(?!_)/),
 	}),
-	inlineCode: Object.assign({ }, markdown.defaultRules.inlineCode, {
+	/*inlineCode: Object.assign({ }, markdown.defaultRules.inlineCode, {
 		match: source => markdown.defaultRules.inlineCode.match.regex.exec(source),
 		html: function(node, output, state) {
 			return htmlTag('code', markdown.sanitizeText(node.content.trim()), null, state);
 		}
-	}),
+	}),*/
 	text: Object.assign({ }, markdown.defaultRules.text, {
 		match: source => /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff-]|\n\n|\n|\w+:\S|$)/.exec(source),
 		html: function(node, output, state) {
