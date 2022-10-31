@@ -163,7 +163,7 @@ const discordCallbackDefaults = {
 };
 
 const rulesDiscord = {
-	discordUser: {
+	/*discordUser: {
 		order: markdown.defaultRules.strong.order,
 		match: source => /^<@!?([0-9]*)>/.exec(source),
 		parse: function(capture) {
@@ -236,7 +236,7 @@ const rulesDiscord = {
 		html: function(node, output, state) {
 			return htmlTag('span', state.discordCallback.here(node), { class: 'd-mention d-user' }, state);
 		}
-	}
+	}*/
 };
 
 Object.assign(rules, rulesDiscord);
