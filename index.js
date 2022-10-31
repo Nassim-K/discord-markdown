@@ -137,9 +137,9 @@ const rules = {
 			return output(node.content, state);
 		},
 	},
-	br: Object.assign({ }, markdown.defaultRules.br, {
+	/*br: Object.assign({ }, markdown.defaultRules.br, {
 		match: markdown.anyScopeRegex(/^\n/),
-	}),
+	}),*/
 	spoiler: {
 		order: 0,
 		match: source => /^\|\|([\s\S]+?)\|\|/.exec(source),
