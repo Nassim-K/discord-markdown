@@ -45,7 +45,7 @@ const rules = {
 			}
 		}
 	}),
-	codeBlock: Object.assign({ }, markdown.defaultRules.codeBlock, {
+	/*codeBlock: Object.assign({ }, markdown.defaultRules.codeBlock, {
 		match: markdown.inlineRegex(/^```(([a-z0-9-]+?)\n+)?\n*([^]+?)\n*```/i),
 		parse: function(capture, parse, state) {
 			return {
@@ -67,7 +67,7 @@ const rules = {
 				'code', code ? code.value : markdown.sanitizeText(node.content), { class: `hljs${code ? ' ' + code.language : ''}` }, state
 			), null, state);
 		}
-	}),
+	}),*/
 	newline: markdown.defaultRules.newline,
 	escape: markdown.defaultRules.escape,
 	autolink: Object.assign({ }, markdown.defaultRules.autolink, {
